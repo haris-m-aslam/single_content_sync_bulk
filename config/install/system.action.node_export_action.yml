@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_export_action
+label: 'Export Content'
+type: node
+plugin: node_export_action
+configuration: {  }

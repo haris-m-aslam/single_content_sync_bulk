@@ -1,0 +1,5 @@
+single_content_sync_bulk.bulk_import:
+  title: 'Bulk import content'
+  description: 'Import content using zip file from other environment.'
+  parent: system.admin_content
+  route_name: single_content_sync_bulk.bulk_import

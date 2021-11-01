@@ -1,0 +1,28 @@
+single_content_sync_bulk.test1:
+  path: '/test-import-content'
+  defaults:
+    _controller: '\Drupal\single_content_sync_bulk\Controller\TestController::importContent'
+    _title: 'Test Export'
+  requirements:
+    _permission: 'import bulk content'
+  options:
+    no_cache: TRUE
+single_content_sync_bulk.zipfile:
+  path: '/test-zip-file'
+  defaults:
+    _controller: '\Drupal\single_content_sync_bulk\Controller\TestController::zipContent'
+    _title: 'Test zip'
+  requirements:
+    _permission: 'import bulk content'
+  options:
+    no_cache: TRUE
+
+single_content_sync_bulk.bulk_import:
+  path: '/admin/content/bulk-import'
+  defaults:
+    _form: '\Drupal\single_content_sync_bulk\Form\ContentImportForm'
+    _title: 'Bulk content import'
+  requirements:
+    _permission: 'import bulk content'
+  options:
+    no_cache: TRUE

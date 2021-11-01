@@ -1,0 +1,4 @@
+name: single content sync bulk import and export
+description: Option for multiple content export in admin content and import from zip file
+type: module
+core_version_requirement: ^8.8.0 || ^9.0

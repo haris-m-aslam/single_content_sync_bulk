@@ -1,0 +1,5 @@
+single_content_sync_bulk.bulk_import:
+  route_name: single_content_sync_bulk.bulk_import
+  base_route: system.admin_content
+  title: 'Bulk Import'
+  weight: 20

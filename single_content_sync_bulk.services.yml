@@ -1,0 +1,9 @@
+services:
+  content_import_route_alter.subscriber:
+    class: Drupal\single_content_sync_bulk\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+  content_import_redirection.subscriber:
+    class: Drupal\single_content_sync_bulk\EventSubscriber\CustomRedirectionSubscriber
+    tags:
+      - { name: event_subscriber }

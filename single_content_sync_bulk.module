@@ -1,0 +1,16 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+function single_content_sync_bulk_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'single_content_sync.import':
+      $output = '';
+      // $output .= '<p>' . t('Paste the content that you just imported and click on the Import button.') . '</p>';
+      // $output .= '<p>' . t('We check content by uuid, so existing content is updated, and new content is created.') . '</p>';
+
+      return $output;
+  }
+}
